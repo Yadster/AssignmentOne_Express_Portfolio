@@ -1,0 +1,31 @@
+  <% include partials/header.ejs %>
+
+  <% include partials/nav.ejs %>
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>title</title>
+      <link rel='stylesheet' href='stylesheets/style.css' />
+    </head>
+    <body>
+      <div class="contactBox">
+        <div class="contactBox2">
+        <form>
+          <h3>GET IN TOUCH</h3>
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="email id" required>
+          <input type="text" id="phone" placeholder="phone no." required>
+          <textarea id="message" rows="4" placeholder="">How can I assist!</textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      </div>
+      <script>
+        function redirectHome() {
+            // Redirect to the homepage 
+            window.location.href = '/';
+        }
+    </script>
+    </body>
+  </html>
